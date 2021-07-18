@@ -18,7 +18,7 @@ mongoose.connect(
 ).then(() => console.log("DB connected")).catch(err => console.log(err));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-const PORT = 5000 || process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 app.use("/api", authRoutes);
 app.use("/api/users", userRoutes);
