@@ -1,0 +1,40 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+		"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: #7474bf; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#348ac7,
+		#7474bf
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#348ac7,
+		#7474bf
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	/* height: 92vh; */
+}
+
+.card-shadow {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-shadow-login,
+.add-note,
+.note {
+	background-image: url("./note-background.png");
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main {
+	margin-top: 2vh;
+	background-image: url("./brick-back.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 95vh;
+}
