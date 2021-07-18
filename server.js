@@ -15,7 +15,7 @@ mongoose.connect(
 		useUnifiedTopology: true,
 		useCreateIndex: true,
 	}
-);
+).then(() => console.log("DB connected")).catch(err => console.log(err));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 const PORT = 5000 || process.env.PORT;
