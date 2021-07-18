@@ -14,12 +14,6 @@ mongoose.connect(
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
 		useCreateIndex: true,
-	},
-	() => {
-		console.log("DB connected");
-		app.listen(PORT, () => {
-			console.log(`Server up and running on port ${PORT}`);
-		});
 	}
 );
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -39,6 +33,6 @@ if (process.env.NODE_ENV === "production") {
 		);
 	});
 }
-// app.listen(PORT, () => {
-// 	console.log(`Server up and running on port ${PORT}`);
-// });
+app.listen(PORT, () => {
+	console.log(`Server up and running on port ${PORT}`);
+});
